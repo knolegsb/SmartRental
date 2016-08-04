@@ -14,6 +14,6 @@ namespace Core.Common.Core
 
         public ExtensionDataObject ExtensionData { get; set; }
 
-        #region
+        #endregion
     }
 }
