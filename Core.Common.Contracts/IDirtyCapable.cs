@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Core.Common.Contracts
 {
-    public class Class1
+    public interface IDirtyCapable
     {
+        bool IsDirty { get; }
+        bool IsAnythingDirty();
+        List<IDirtyCapable> GetDirtyObject();
+        void CleanAll();
     }
 }

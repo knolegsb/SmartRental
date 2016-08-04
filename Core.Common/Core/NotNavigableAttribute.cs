@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Core.Common
+namespace Core.Common.Core
 {
-    public class Class1
+    [AttributeUsage(AttributeTargets.Property)]
+    public class NotNavigableAttribute : Attribute
     {
     }
 }
